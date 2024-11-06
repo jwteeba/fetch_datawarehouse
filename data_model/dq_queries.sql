@@ -1,3 +1,5 @@
+-- SQL Syntax: AWS Redshift
+
 -- Check for null values in important fields:
 
 SELECT 

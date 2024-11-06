@@ -35,6 +35,7 @@ DIM_CPG
            |---- 1 FACT_RECEIPT (Each receipt item belongs to exactly one receipt)
 
 
+SQL Syntax: AWS Redshift
 **/
 
 

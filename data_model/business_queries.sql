@@ -7,6 +7,7 @@ When considering total number of items purchased from receipts with 'rewardsRece
 Which brand has the most spend among users who were created within the past 6 months?
 Which brand has the most transactions among users who were created within the past 6 months?
 
+SQL Syntax: AWS Redshift
 **/
 
 -- What are the top 5 brands by receipts scanned for most recent month?
