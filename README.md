@@ -31,7 +31,24 @@ Here are my findings after conducting a deep dive into the users dataset. To ens
 
 **Data quality issues discovery:**
 
+**Python:** 
+
 Identify data quality issues by checking for null values, duplicates, and inconsistencies. A `Python` data validation script was created to thoroughly analyze the data and uncover any quality concerns.
+
+**SQL:**
+
+Conducted the following data quality checks using SQL queries to ensure data integrity:
+
+- Validate that important fields do not contain null values.
+- Verify data consistency within the FACT_RECEIPT table.
+- Identify any records with invalid dates.
+- Check for duplicate brand codes.
+- Detect users who have an abnormally high number of receipts.
+- Flag receipts with an unusually high total amount spent.
+- Ensure consistency between FACT_RECEIPT and FACT_RECEIPT_ITEM tables.
+- Identify brands that do not have a valid CPG association.
+- Examine for unusual time gaps between purchase and scan dates.
+- Checked for orphaned records within the FACT_RECEIPT_ITEM table.
 
 **Resolving the data quality issues:**
 
@@ -55,4 +72,6 @@ Please provide the following information for optimizing the data assets
 - Budget constraints for infrastructure and tools (e.g.: AWS Redshift)
 
 
-Challenges include query performance degradation as data volume increases, longer load times for large data ingestions, concurrency issues with multiple users, storage capacity constraints, and greater complexity in maintaining data consistency across expanding datasets. To support this, I have arranged a weekly sync call for further discussion and feedback on these implementations. Please see the attached artifacts for additional details. Thank you.
+Challenges include query performance degradation as data volume increases, longer load times for large data ingestions, concurrency issues with multiple users, storage capacity constraints, and greater complexity in maintaining data consistency across expanding datasets. To support this, I have arranged a weekly sync call for further discussion and feedback on these implementations. Please see the attached artifacts for additional details. 
+
+Thank you.
