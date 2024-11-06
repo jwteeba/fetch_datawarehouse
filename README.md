@@ -8,7 +8,6 @@ Tech Stack:
 - Pytest - used for testing Python code
 - MySQL Workbench - used for creating visual data model
 - SQL (Redshift): used to create data model
-- Lucichart - used to create a visual representation of the data warehouse
 
 Data Model - ***Foreign key references are included, for query planning and are not enforced in Redshift***
 
